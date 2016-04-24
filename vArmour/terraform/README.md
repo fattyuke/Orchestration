@@ -6,10 +6,12 @@ vArmour Terraform
 
 <img src="http://allegiscap.com/wp-content/uploads/2015/03/vArmour-Logo-Color1.jpg" /><img src="https://xebialabs.com/assets/files/plugins/terraform.jpg" width="300" height="250" />
 
-##vArmour
+###vArmour
 vArmour is the industry’s first distributed security system that provides insight and control for multi-cloud environments. With its patented software, vArmour micro-segments each application by wrapping protection around every workload - increasing visibility, security, and operational efficiency.
 
-##Terraform
+For more information, see the [Product Overview section](https://www.varmour.com/product/overview) of the vArmour website.
+
+###Terraform
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
 
 The key features of Terraform are:
@@ -23,6 +25,10 @@ The key features of Terraform are:
 - **Change Automation**: Complex changesets can be applied to your infrastructure with minimal human interaction. With the previously mentioned execution plan and resource graph, you know exactly what Terraform will change and in what order, avoiding many possible human errors.
 
 For more information, see the [introduction section](http://www.terraform.io/intro) of the Terraform website.
+
+Why Terraform
+-------------------------------
+
 
 Getting Started & Documentation
 -------------------------------
