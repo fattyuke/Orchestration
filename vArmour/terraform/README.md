@@ -28,7 +28,19 @@ For more information, see the [introduction section](http://www.terraform.io/int
 
 Why Terraform
 -------------------------------
+Comparable tools are Amazon CloudFormation and OpenStack Heat. They are both locked to their respective platforms. Terraform on the other hand supports all the major cloud providers - from DigitalOcean and Linode to the big ones like Azure, Google Compute and of course Amazon.
 
+If you are already invested in a CAPS(Chef, Ansible, Puppet and Salt), than you already know that all of them have at least decent support for building servers in the cloud. What makes Terraform different? Why should you invest your precious time in learning yet another tool offering similar functionality. Here's why:
+
+**State**
+
+In a way Terraform acts as a simple version control for cloud infrastructure. Once you run terraform apply, it will create a .tfstate file with details about the newly created resource. The next time you run the the command, it will get the id from the tfstate file and compare that to what already exist in the real world.
+
+The tfstate file is a simple JSON, you can keep it in Git, share it with your team and build on it. If something bad happens - you can easily rebuild.
+
+**Planning**
+
+For me this was the main reason to try Terraform. terraform plan matches the definition against the real world infrastructure and shows you exactly what is going to happen if you execute in that moment.
 
 Getting Started & Documentation
 -------------------------------
