@@ -4,7 +4,7 @@ vArmour Terraform
 - vArmour Website: http://www.varmour.com
 - Website: http://www.terraform.io
 
-<img src="https://xebialabs.com/assets/files/plugins/terraform.jpg" width="200" height="150" />
+<img src="http://allegiscap.com/wp-content/uploads/2015/03/vArmour-Logo-Color1.jpg" /><img src="https://xebialabs.com/assets/files/plugins/terraform.jpg" width="200" height="150" />
 
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. Terraform can manage existing and popular service providers as well as custom in-house solutions.
 
