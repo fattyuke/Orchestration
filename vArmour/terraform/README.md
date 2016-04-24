@@ -42,10 +42,16 @@ The tfstate file is a simple JSON, you can keep it in Git, share it with your te
 
 For me this was the main reason to try Terraform. terraform plan matches the definition against the real world infrastructure and shows you exactly what is going to happen if you execute in that moment.
 
-Getting Started & Documentation
+vArmour in AWS
 -------------------------------
 
-All documentation is available on the [Terraform website](http://www.terraform.io).
+###Deployment Requirements
+The requirements listed in this section must be met in order to successfully deploy vArmour DSS:
+
+-You have an AWS account.
+-You have access to the vArmour DSS Amazon Machine Image (AMI).
+**Note:**
+For access to the vArmour DSS AMI contact your sales representative or send a request to support@varmour.com.
 
 Developing Terraform
 --------------------
