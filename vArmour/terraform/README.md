@@ -99,9 +99,9 @@ In the example topology shown we have:
 
 Terraform has precompiled binaries for all the major distros. You download, unzip and you run terraform plan/apply. Nothing complicated here. A few notes:
 
--In the Terraform folder you will find 20-30 additional binaries. These are plugins and you don't interract with them directly. You can delete the ones you don't need if you want.
--Adding the Terraform folder to the system path is crucial. This way you will be able to execute the terraform command from anywhere
--oh-my-zsh has a very useful autocomplete plugin for Terraform
+-In the Terraform folder you will find 20-30 additional binaries. These are plugins and you don't interact with them directly. You can delete the ones you don't need if you want.  
+-Adding the Terraform folder to the system path is crucial. This way you will be able to execute the terraform command from anywhere  
+-oh-my-zsh has a very useful autocomplete plugin for Terraform  
 -Atom and Sublime Text both have syntax plugins for Terraform making it easier to spot typos
 
 There are two other options for getting started with Terraform:
