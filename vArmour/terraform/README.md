@@ -73,11 +73,11 @@ In the example topology shown we have:
   * Data­2 ­ 10.254.4.0/24 
 
 3. ENI’s in each of the subnets 
-..a. Management 
-....i. 10.254.1.10 ­ Director Management Eni 
-....ii. 10.254.1.11 ­ EP1 Management Eni 
-....iii. 10.254.1.100 ­ Analytics Platform Eni 
-....iv. 10.254.1.200 ­ Windows RDP Gateway 
+  * Management 
+....1. 10.254.1.10 ­ Director Management Eni 
+....2. 10.254.1.11 ­ EP1 Management Eni 
+....3. 10.254.1.100 ­ Analytics Platform Eni 
+....4. 10.254.1.200 ­ Windows RDP Gateway 
 
 ..b. Fabric 
 ....i. 10.254.2.10 ­ Director Fabric Eni 
