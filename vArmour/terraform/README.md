@@ -95,7 +95,7 @@ In the example topology shown we have:
     3. 10.254.4.13 ­ WebServer2 Eni 
     4. 10.254.4.14 ­ WebServer3 Eni 
 
-***Installing Terraform
+###Installing Terraform
 
 Terraform has precompiled binaries for all the major distros. You download, unzip and you run terraform plan/apply. Nothing complicated here. A few notes:
 
@@ -109,13 +109,14 @@ There are two other options for getting started with Terraform:
 Using a pre-packaged AMI from the AWS Marketplace that contains Terraform
 If you prefer to use something like Vagrant, there is a Vagrant/Terraform box available
 
-***AWS Credentials
+###AWS Credentials
 
 Since it's a bad practice to have your credentials in source code, you should load them from the default configuration file: `~/.aws/credentials`. This file could look like this:
 
 ```[default]
 aws_access_key_id=AKIAIOSFODNN7EXAMPLE
-aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY```
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+```
 
 If there is no `~/.aws/credentials` file in your home directory, simply create one. 
 
