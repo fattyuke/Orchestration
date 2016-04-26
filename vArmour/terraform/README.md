@@ -120,6 +120,19 @@ If there is no `~/.aws/credentials` file in your home directory, simply create o
 
 For more information, please see: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-config-files
 
+###Standing up the vArmour Fabric
+
+There are three template files:
+
+`Variables.tf` – This contains all of the variables used by the Terraform template. All of the variables are defined using the example topology above. Feel free to make changes based upon your own environment.
+
+`Init.tpl` – If you wish to bypass the vArmour DSS Configuration Wizard, you can use this file to place the vArmour configuration information into the User data fields during AWS installation process. By providing this information, the vArmour DSS configuration wizard does not have to be run prior to deployment.
+
+`va-fabric.tf` – This file contains the entire layout for the vArmour fabric in AWS. 
+
+All vArmour Fabric AWS Terraform deployment templates are available in the ~/examples templates folder or in an AWS S3 bucket called varmour­terraform­templates­us­west­2 
+
+
 
 
 
