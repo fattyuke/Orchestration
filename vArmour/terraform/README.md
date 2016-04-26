@@ -66,14 +66,12 @@ In the example topology shown we have:
  
 1. VPC with CIDR 10.254.0.0/16
 
-2. Subnets 
-  a. Management ­ 10.254.1.0/24
-   
-  b. Fabric ­ 10.254.2.0/24
-  
-  c. Data­1 ­ 10.254.3.0/24
-  
-  d. Data­2 ­ 10.254.4.0/24 
+2. Subnets
+
+  * Management ­ 10.254.1.0/24
+  * Fabric ­ 10.254.2.0/24
+  * Data­1 ­ 10.254.3.0/24
+  * Data­2 ­ 10.254.4.0/24 
 
 3. ENI’s in each of the subnets 
 ..a. Management 
