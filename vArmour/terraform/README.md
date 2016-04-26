@@ -50,11 +50,9 @@ In this document we will illustrate how we can leverage Terraform to deploy vArm
 ###Deployment Requirements
 The requirements listed in this section must be met in order to successfully deploy vArmour DSS:
 
-+You have an AWS account.
-
-+You have access to the vArmour DSS Amazon Machine Image (AMI).
-
-+You have create a vArmour Role & Policy (See Creating “Creating vArmour IAM Role” section)
++You have an AWS account.  
++You have access to the vArmour DSS Amazon Machine Image (AMI).  
++You have create a vArmour Role & Policy (See Creating “Creating vArmour IAM Role” section)  
 
 **Note:**
 For access to the vArmour DSS AMI contact your sales representative or send a request to support@varmour.com.
