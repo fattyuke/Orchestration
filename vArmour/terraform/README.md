@@ -79,23 +79,48 @@ In the example topology shown we have:
     3. 10.254.1.100 ­ Analytics Platform Eni   
     4. 10.254.1.200 ­ Windows RDP Gateway   
 
-..b. Fabric 
-....i. 10.254.2.10 ­ Director Fabric Eni 
-....ii. 10.254.2.11 ­ EP1 Fabric Eni
+  * Fabric 
+    1. 10.254.2.10 ­ Director Fabric Eni 
+    2. 10.254.2.11 ­ EP1 Fabric Eni
 
-..c. Data­1 
-....i. 10.254.3.11 ­ EP1 Revenue1 Eni 
-....ii. 10.254.3.12 ­ AppServer1 Eni 
-....iii. 10.254.3.13 ­ AppServer2 Eni 
-....iv. 10.254.3.14 ­ AppServer3 Eni 
+  * Data­1 
+    1. 10.254.3.11 ­ EP1 Revenue1 Eni 
+    2. 10.254.3.12 ­ AppServer1 Eni 
+    3. 10.254.3.13 ­ AppServer2 Eni 
+    4. 10.254.3.14 ­ AppServer3 Eni 
 
-..d. Data­2 
-....i. 10.254.4.11 ­ EP1 Revenue2 Eni 
-....ii. 10.254.4.12 ­ WebServer1 Eni 
-....iii. 10.254.4.13 ­ WebServer2 Eni 
-....iv. 10.254.4.14 ­ WebServer3 Eni 
+  * Data­2 
+    1. 10.254.4.11 ­ EP1 Revenue2 Eni 
+    2. 10.254.4.12 ­ WebServer1 Eni 
+    3. 10.254.4.13 ­ WebServer2 Eni 
+    4. 10.254.4.14 ­ WebServer3 Eni 
 
-All vArmour Fabric AWS Terraform deployment templates are available in AWS S3 bucket varmour­terraform­templates­us­west­2 
+***Installing Terraform
+
+Terraform has precompiled binaries for all the major distros. You download, unzip and you run terraform plan/apply. Nothing complicated here. A few notes:
+
+-In the Terraform folder you will find 20-30 additional binaries. These are plugins and you don't interract with them directly. You can delete the ones you don't need if you want.
+-Adding the Terraform folder to the system path is crucial. This way you will be able to execute the terraform command from anywhere
+-oh-my-zsh has a very useful autocomplete plugin for Terraform
+-Atom and Sublime Text both have syntax plugins for Terraform making it easier to spot typos
+
+There are two other options for getting started with Terraform:
+
+Using a pre-packaged AMI from the AWS Marketplace that contains Terraform
+If you prefer to use something like Vagrant, there is a Vagrant/Terraform box available
+
+***AWS Credentials
+
+Since it's a bad practice to have your credentials in source code, you should load them from the default configuration file: `~/.aws/credentials`. This file could look like this:
+
+```[default]
+aws_access_key_id=AKIAIOSFODNN7EXAMPLE
+aws_secret_access_key=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY```
+
+If there is no `~/.aws/credentials` file in your home directory, simply create one. 
+
+For more information, please see: http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html#cli-config-files
+
 
 
 
